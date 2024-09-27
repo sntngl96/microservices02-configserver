@@ -1,0 +1,6 @@
+#spring:
+  #config:
+    #activate:
+      #on-profile: "default"
+# qui dico che l'ambiente default deve essere attivato quandp sull'application.yml il profilo attivo e' "defaul"
+ambiente: "default"
