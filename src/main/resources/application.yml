@@ -15,4 +15,4 @@ spring:
           timeout: 5
           clone-on-start: true #clona il remoto in locale all'avvio
           force-pull: true #fa sempre il pull dopo le modifiche
-          #search-locations: "classpath:/config"
+          #search-locations: "classpath:/config" #mi serve solo con il native
