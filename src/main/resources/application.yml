@@ -5,9 +5,14 @@ spring:
   application:
     name: configserver
   profiles:
-    active: native
+    active: git # native # non voglio piu' usare quella in locale'
   cloud:
     config:
       server:
-        native:
-          search-locations: "classpath:/config"
+        git:
+          uri: "https://github.com/sntngl96/microservices02-configserver.git"
+          default-label: main
+          timeout: 5
+          clone-on-start: true #clona il remoto in locale all'avvio
+          force-pull: true #fa sempre il pull dopo le modifiche
+          #search-locations: "classpath:/config"
